@@ -14,7 +14,12 @@ public class Main {
         }
         out.print(m);
     }
- 
+    
+    static int gcd(int a,int b){
+        if(b==0) return a;
+        return gcd(b,a%b);
+    }
+    
     public static void main(String[] args) throws IOException {
         sc = new FastReader();
         out = new PrintWriter(System.out);
