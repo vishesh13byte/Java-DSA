@@ -19,6 +19,15 @@ public class Main {
         if(b==0) return a;
         return gcd(b,a%b);
     }
+ 
+    static int[] strToIntArray(String s){
+        String[] sarr = s.split(" ");
+        int[] arr = new int[sarr.length];
+        for(int i = 0; i < sarr.length; i++){
+            arr[i] = Integer.parseInt(sarr[i]);
+        }
+        return arr;
+    }
     
     public static void main(String[] args) throws IOException {
         sc = new FastReader();
