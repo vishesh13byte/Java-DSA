@@ -1,3 +1,5 @@
+/* package codechef; // don't place package name! */
+
 import java.util.*;
 import java.io.*;
  
@@ -6,13 +8,15 @@ public class Main {
     static PrintWriter out;
  
     static void solve() {
-        StringBuilder res = new StringBuilder();
+        //StringBuilder sb = new StringBuilder();
+        //int m, k, x, y, z;
+        // List<Integer> list = new ArrayList<>();
+        // HashMap<Integer,Integer> map = new HashMap<>();
+        //PriorityQueue<Integer> pq = new PriorityQueue<>(); 
         int n = sc.nextInt();
-        int m, k, x, y, z;
-        List<Integer> list = new ArrayList<>();
         for (int i = 0; i < n; i++) {
         }
-        out.print(m);
+        out.println();
     }
     
     static int gcd(int a,int b){
@@ -32,11 +36,13 @@ public class Main {
     public static void main(String[] args) throws IOException {
         sc = new FastReader();
         out = new PrintWriter(System.out);
-        int tt = 1;// sc.nextInt();
+        
+        int tt = sc.nextInt();
         for (int t = 1; t <= tt; t++) {
             // out.printf("Case %d: ", t);
             solve();
         }
+        // solve();
         out.close();
     }
  
